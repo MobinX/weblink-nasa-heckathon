@@ -6,6 +6,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [vike(), react(), tailwindcss(), vercel()],
+  assetsInclude: ['**/*.glb', '**/*.gltf'],
   build: {
     target: "es2022",
   },

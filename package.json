@@ -1,18 +1,22 @@
 {
   "scripts": {
-    "dev": "vike dev",
+    "dev": "vike dev --host",
     "build": "vike build",
     "preview": "vike preview",
     "lint": "eslint ."
   },
   "dependencies": {
-    "vike": "^0.4.239",
+    "@react-three/drei": "^10.7.6",
+    "@react-three/fiber": "^9.3.0",
+    "@vite-plugin-vercel/vike": "^9.0.6",
     "@vitejs/plugin-react": "^5.0.2",
+    "gltf-pipeline": "^4.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "three": "^0.180.0",
+    "vike": "^0.4.239",
     "vike-react": "^0.6.5",
-    "vite-plugin-vercel": "^9.0.7",
-    "@vite-plugin-vercel/vike": "^9.0.6"
+    "vite-plugin-vercel": "^9.0.7"
   },
   "devDependencies": {
     "typescript": "^5.9.2",
@@ -27,5 +31,8 @@
     "tailwindcss": "^4.1.13",
     "@tailwindcss/vite": "^4.1.13"
   },
-  "type": "module"
+  "type": "module",
+  "trustedDependencies": [
+    "@tailwindcss/oxide"
+  ]
 }

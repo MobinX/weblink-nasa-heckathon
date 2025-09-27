@@ -6,13 +6,8 @@ import { Link } from "../components/Link.js";
 
 export default function LayoutDefault({ children }: { children: React.ReactNode }) {
   return (
-    <div className={"flex max-w-5xl m-auto"}>
-      <Sidebar>
-        <Logo />
-        <Link href="/">Welcome</Link>
-        <Link href="/todo">Todo</Link>
-        <Link href="/star-wars">Data Fetching</Link>
-      </Sidebar>
+    <div className={"flex  m-auto"}>
+      
       <Content>{children}</Content>
     </div>
   );
@@ -29,7 +24,7 @@ function Sidebar({ children }: { children: React.ReactNode }) {
 function Content({ children }: { children: React.ReactNode }) {
   return (
     <div id="page-container">
-      <div id="page-content" className={"p-5 pb-12 min-h-screen"}>
+      <div id="page-content" className={"p-5 pb-12 min-h-screen bg-black"}>
         {children}
       </div>
     </div>
